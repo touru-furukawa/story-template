@@ -22,7 +22,7 @@
     "yaml": "^1.10.2"
   },
   "scripts": {
-    "start": "next-remote-watch src/*"
+    "start": "next-remote-watch story.md"
   },
   "repository": {
     "type": "git",
