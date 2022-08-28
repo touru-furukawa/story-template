@@ -36,6 +36,9 @@
   },
   "homepage": "https://github.com/torufurukawa/stories#readme",
   "devDependencies": {
-    "next-remote-watch": "^1.0.0"
+    "next-remote-watch": "^1.0.0",
+    "textlint": "^12.2.1",
+    "textlint-rule-preset-ja-spacing": "^2.2.0",
+    "textlint-rule-preset-japanese": "^7.0.0"
   }
 }
