@@ -2,13 +2,13 @@
 title: TODO
 ---
 
-::act[起 TODO >>> TODO]
+::act[起: TODO >>> TODO]
 ::seq[TODO >>> TODO]
 ::scene[TODO]
 
-::act[承 TODO >>> TODO]
-::act[転 TODO >>> TODO]
-::act[結 TODO >>> TODO]
+::act[承: TODO >>> TODO]
+::act[転: TODO >>> TODO]
+::act[結: TODO >>> TODO]
 
 :::todo
 ...
