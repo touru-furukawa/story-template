@@ -1,5 +1,12 @@
 {
-  "filters": {},
+  "filters": {
+    "allowlist": {
+      "allow": [
+        "::?\\w+\\[.*?\\]$",
+        "\\w+\\[.*?\\]$"
+      ]
+    }
+  },
   "rules": {
     "preset-japanese": {
       "max-ten": {"max": 3},

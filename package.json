@@ -38,6 +38,7 @@
   "devDependencies": {
     "next-remote-watch": "^1.0.0",
     "textlint": "^12.2.1",
+    "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-rule-preset-ja-spacing": "^2.2.0",
     "textlint-rule-preset-japanese": "^7.0.0"
   }
