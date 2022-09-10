@@ -1,5 +1,6 @@
 import { Container, Overlay, Tooltip, Form } from 'react-bootstrap'
 import { useRef, useState } from 'react'
+import { getSourceFilePath } from '../lib/config'
 import { getStory } from '../lib/stories'
 
 export default function Page({ story }) {
@@ -74,7 +75,7 @@ function Content({ children, doubleSpace }) {
 //
 
 export async function getStaticProps() {
-  const story = getStory()
+  const story = getStory(getSourceFilePath())
   return { props: { story } }
 }
 
