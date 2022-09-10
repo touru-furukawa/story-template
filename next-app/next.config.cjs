@@ -6,5 +6,5 @@ module.exports = {
       config.resolve.fallback['remark-directive'] = false;
     }
     return config;
-  },
+  }
 };
