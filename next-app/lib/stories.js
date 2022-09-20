@@ -10,11 +10,10 @@ import remarkDirective from 'remark-directive'
 import remarkBreaks from 'remark-breaks'
 import { visit } from 'unist-util-visit'
 import { h } from 'hastscript'
-
-const SOURCE_DIR = path.join(process.cwd())
+import { getSourceFilePath } from './config'
 
 export function getStory() {
-  const filepath = path.join(SOURCE_DIR, 'story.md')
+  const filepath = getSourceFilePath()
   const markdown = readMarkdown(filepath)
   const story = markdown.data
   story.content = markdown.result
