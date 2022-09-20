@@ -1,5 +1,4 @@
 import fs from 'fs'
-import path from 'path'
 import { unified } from 'unified'
 import { VFile } from 'vfile'
 import remarkParse from 'remark-parse'
