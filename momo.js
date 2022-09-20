@@ -1,20 +1,19 @@
 #!/usr/bin/env node
 import { spawn } from 'child_process'
-
-console.log("momo")
-
 import { fileURLToPath } from 'url'
 import path from 'path'
 
+// Resolve paths
 const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-const nextRootDir = path.join(__dirname, "next-app")
-console.log(nextRootDir)
+const packageRootPath = path.dirname(__filename)
+const nextRootPath = path.join(packageRootPath, "next-app")
+const watcherPath = path.join(packageRootPath,
+  "node_modules", "next-remote-watch", "bin", "next-remote-watch")
 
-const watcherPath = path.join(__dirname, "node_modules", "next-remote-watch", "bin", "next-remote-watch")
+// Start watching
+const next = spawn(watcherPath, ["-r", nextRootPath])
 
-const next = spawn(watcherPath, ["-r", nextRootDir])
-
+// Configure standard output and error
 next.stdout.on("data", data => {
   process.stdout.write(`${data}`)
 })
