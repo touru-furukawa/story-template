@@ -40,5 +40,8 @@
     "url": "https://github.com/torufurukawa/stories/issues"
   },
   "homepage": "https://github.com/torufurukawa/stories#readme",
-  "type": "module"
+  "type": "module",
+  "bin": {
+    "momo": "./momo.js"
+  }
 }
