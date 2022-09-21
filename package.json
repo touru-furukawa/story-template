@@ -26,7 +26,7 @@
     "textlint-rule-preset-japanese": "^7.0.0"
   },
   "scripts": {
-    "start": "next-remote-watch story.md",
+    "start": "next-remote-watch story.md -r next-app",
     "checkin": "git commit --allow-empty -m 'Start working'"
   },
   "repository": {
